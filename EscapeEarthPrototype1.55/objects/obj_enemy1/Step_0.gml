@@ -6,5 +6,5 @@ else
 {
 	visible = true;
 	//movement script for enemies 
-	mp_potential_step(obj_player.x,obj_player.y,5,1);
+	mp_potential_step(obj_player.x,y,5,1);
 }
