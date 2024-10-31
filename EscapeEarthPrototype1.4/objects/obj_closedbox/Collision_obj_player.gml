@@ -1,1 +1,3 @@
-var l15B42F8C_0;l15B42F8C_0 = keyboard_check_pressed(ord("F"));if (l15B42F8C_0){	instance_change(obj_openbox, true);}
+// Variables to initialize in the Create event
+isInBox = false;  // Track if player is in the box
+interactionRange = 32;  // Example range within which player can interact with the box
