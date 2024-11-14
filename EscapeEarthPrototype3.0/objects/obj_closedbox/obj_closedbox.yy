@@ -8,8 +8,8 @@
   "name":"obj_closedbox",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Interactive",
+    "path":"folders/Objects/Environment/Interactive.yy",
   },
   "parentObjectId":null,
   "persistent":false,

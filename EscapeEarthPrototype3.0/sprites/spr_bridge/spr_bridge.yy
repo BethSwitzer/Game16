@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_bridge",
   "bboxMode":0,
-  "bbox_bottom":54,
+  "bbox_bottom":37,
   "bbox_left":0,
   "bbox_right":127,
   "bbox_top":0,

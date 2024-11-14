@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Blocks",
-    "path":"folders/Objects/Environment/Blocks.yy",
+    "path":"folders/Sprites/Environment/Blocks.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

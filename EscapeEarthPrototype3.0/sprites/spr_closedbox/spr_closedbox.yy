@@ -49,8 +49,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"Environment",
-    "path":"folders/Sprites/Environment.yy",
+    "name":"Interactive",
+    "path":"folders/Sprites/Environment/Interactive.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
