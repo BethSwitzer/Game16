@@ -235,7 +235,7 @@
   "name":"rm_level_2",
   "parent":{
     "name":"Levels",
-    "path":"folders/Rooms/Levels.yy",
+    "path":"folders/Paths/Rooms/Levels.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

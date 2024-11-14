@@ -14,3 +14,16 @@ event_inherited();
 /// @DnDArgument : "arg_2" "y"
 /// @DnDArgument : "arg_3" "0"
 audio_listener_set_position(0, x, y, 0);
+
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 61AD7FF6
+/// @DnDArgument : "code" "// Player Step Event$(13_10)if (place_meeting(x, y, obj_closedbox)) {$(13_10)    // Player is inside the box$(13_10)    is_hidden = true;$(13_10)} else {$(13_10)    // Player is outside the box$(13_10)    is_hidden = false;$(13_10)}"
+// Player Step Event
+if (place_meeting(x, y, obj_closedbox)) {
+    // Player is inside the box
+    is_hidden = true;
+} else {
+    // Player is outside the box
+    is_hidden = false;
+}

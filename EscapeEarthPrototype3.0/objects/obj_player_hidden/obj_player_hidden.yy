@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_player_hidden",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_closedbox","path":"objects/obj_closedbox/obj_closedbox.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_player_hidden",
   "overriddenProperties":[],
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_closedbox",
+    "path":"sprites/spr_closedbox/spr_closedbox.yy",
+  },
   "spriteMaskId":null,
   "visible":false,
 }

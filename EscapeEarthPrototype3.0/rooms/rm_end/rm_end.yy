@@ -17,7 +17,7 @@
   "name":"rm_end",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "path":"folders/Paths/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
