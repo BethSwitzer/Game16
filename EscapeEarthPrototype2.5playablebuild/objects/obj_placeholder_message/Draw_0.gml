@@ -30,15 +30,16 @@ draw_set_colour($FF1F529B & $ffffff);
 var l0ED16B56_0=($FF1F529B >> 24);
 draw_set_alpha(l0ED16B56_0 / $ff);
 
-/// @DnDAction : YoYo Games.Drawing.Draw_Value
+/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
 /// @DnDVersion : 1
-/// @DnDHash : 10150B10
-/// @DnDComment : This draws the text.
+/// @DnDHash : 6DA1CB08
 /// @DnDArgument : "x_relative" "1"
+/// @DnDArgument : "y" "1"
 /// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "caption" ""
-/// @DnDArgument : "var" "text"
-draw_text(x + 0, y + 0,  + string(text));
+/// @DnDArgument : "xscale" "0.5"
+/// @DnDArgument : "yscale" "0.5"
+/// @DnDArgument : "text" "text"
+draw_text_transformed(x + 0, y + 1, string("Caption: ") + string(text), 0.5, 0.5, 0);
 
 /// @DnDAction : YoYo Games.Drawing.Set_Color
 /// @DnDVersion : 1
