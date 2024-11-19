@@ -18,9 +18,9 @@ friction_power = 0.7;
 /// @DnDVersion : 1
 /// @DnDHash : 6B96D840
 /// @DnDComment : This is the jumping speed of the character.
-/// @DnDArgument : "expr" "25"
+/// @DnDArgument : "expr" "30"
 /// @DnDArgument : "var" "jump_speed"
-jump_speed = 25;
+jump_speed = 30;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
