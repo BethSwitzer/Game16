@@ -18,9 +18,9 @@ friction_power = 0.7;
 /// @DnDVersion : 1
 /// @DnDHash : 6B96D840
 /// @DnDComment : This is the jumping speed of the character.
-/// @DnDArgument : "expr" "30"
+/// @DnDArgument : "expr" "25"
 /// @DnDArgument : "var" "jump_speed"
-jump_speed = 30;
+jump_speed = 25;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
@@ -39,6 +39,13 @@ grav_speed = 1;
 /// @DnDArgument : "var_1" "vel_y"
 vel_x = 0;
 vel_y = 0;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 59C126F9
+/// @DnDArgument : "expr" "false"
+/// @DnDArgument : "var" "jumped"
+jumped = false;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1

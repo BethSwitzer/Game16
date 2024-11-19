@@ -40,3 +40,10 @@ obj_player.move_speed = 8;
 /// @DnDArgument : "expr" "false"
 /// @DnDArgument : "var" "is_hiding"
 is_hiding = false;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 7117ED3A
+/// @DnDArgument : "expr" "false"
+/// @DnDArgument : "var" "jumped"
+jumped = false;
