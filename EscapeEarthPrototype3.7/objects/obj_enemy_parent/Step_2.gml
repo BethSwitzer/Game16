@@ -21,7 +21,7 @@ if(wall_found)
 	// it's positive it becomes negative, and vice versa.
 	// This means the enemy turns to the other direction
 	// (from left to right, and vice versa).
-	vel_x = 0;
+	vel_x = -vel_x;
 }
 
 // Here we are looking for a ledge, by checking for
@@ -45,7 +45,7 @@ if(!(ground_ahead))
 	if(grounded)
 {
 	// This makes the enemy turn.
-		vel_x = 0;
+		vel_x = -vel_x;
 }
 }
 
@@ -57,5 +57,5 @@ var l4215A62D_0 = instance_place(x + vel_x * 16, y + 0, [obj_enemy_parent]);
 if ((l4215A62D_0 > 0))
 {
 	// In that case the enemy turns.
-	vel_x = 0;
+	vel_x = -vel_x;
 }
