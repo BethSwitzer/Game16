@@ -1,7 +1,5 @@
-// This runs the parent's End Step event.
-// The rest of the event is concerned with making
-// the enemy turn, either when it hits a wall, or
-// finds a ledge.
+if collision_line(x,y,obj_player.x,y,obj_block_brick,1,1)
+{
 event_inherited();
 
 // This action calls the check_collision function,
@@ -58,4 +56,5 @@ if ((l4215A62D_0 > 0))
 {
 	// In that case the enemy turns.
 	vel_x = -vel_x;
+}
 }

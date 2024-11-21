@@ -1,113 +1,61 @@
+var stuck = check_collision(0,64);
+if (stuck){
+	if (grounded)
+	{
+	move_snap(x, y - 1);
+	}		
+}
+if collision_line(x,y,obj_player.x,obj_player.y,obj_block_brick, false, false)
+{	
 
-
-if collision_line(x,y,obj_player.x,y,obj_block_brick,1,0)
-{
-	
-// This runs the parent's End Step event.
-// The rest of the event is concerned with making
-// the enemy turn, either when it hits a wall, or
-// finds a ledge.
 event_inherited();
-
-// This action calls the check_collision function,
-// and looks for a wall collision where the enemy
-// is walking.
-// We multiply the vel_x by 4 to look for a wall,
-// so we're looking ahead 4 times by the amount
-// the enemy will move this frame.
-// The result (true or false) is stored in a temporary
-// variable.
-var wall_found = check_collision(vel_x * 2, 0);
-
-// This checks if a wall was found.
-if(wall_found)
-{
-	// This flips the sign of the X velocity, so if
-	// it's positive it becomes negative, and vice versa.
-	// This means the enemy turns to the other direction
-	// (from left to right, and vice versa).
-	vel_x = -vel_x;
-}
-
-// Here we are looking for a ledge, by checking for
-// a collision 32 times ahead where the enemy is 
-// moving.
-// However this time the Y offset is set to 64, so
-// it's looking for a collision 64 pixels below where
-// the enemy would be.
-// If a collision is not found there, it means that
-// position has no ground for the enemy to walk on,
-// so we've hit a ledge.
-// The result of this function is stored in 'ground_ahead'.
-var ground_ahead = check_collision(vel_x * 32, 64);
-
-// This checks if a collision was NOT found there,
-// meaning we've hit a ledge.
-if(!(ground_ahead))
-{
-	// This ensures the enemy is grounded, so
-	// enemies in mid-air do not turn.
-	if(grounded)
-{
-	// This makes the enemy turn.
+	var wall_found = check_collision(vel_x * 2, 0);
+	if(wall_found)
+	{
+	
 		vel_x = -vel_x;
-}
-}
+	}
+	var ground_ahead = check_collision(vel_x * 32, 64);
+	if(!(ground_ahead))
+	{
+		if(grounded)
+		{
+			vel_x = -vel_x;
+		}
+	}
 
-// This checks if there is another enemy where
-// this enemy is moving. This is used to make
-// the enemy turn if it runs into another enemy,
-// so they don't pass through each other.
-var l4215A62D_0 = instance_place(x + vel_x * 16, y + 0, [obj_enemy_parent]);
-if ((l4215A62D_0 > 0))
-{
-	// In that case the enemy turns.
-	vel_x = -vel_x;
-}
-			
 }
 else
 {
 	
-	//movement script for enemies 
-	mp_potential_step(obj_player.x,y,5,0);
-
+	mp_potential_step(obj_player.x,y,5,false);
 // obj_enemy1 - Step Event
 	var player = instance_nearest(x, y, obj_player);
-
+	
 	if (player != noone) {
 		if (player.is_hiding) {
 			// Move away
 			var dx = x - player.x;
-			var dy = y - player.y;
-			var angle = point_direction(0, 0, dx, 0);
+			var angle = point_direction(x, y, dx, 0);
 			x += lengthdir_x(2, angle); 
 			y += lengthdir_y(0, angle);
 		} else {
+			
 			// Chase the player
 			var angle = point_direction(x, y, player.x, 0);
 			x += lengthdir_x(2, angle); 
 			y += lengthdir_y(0, angle);
-						event_inherited();
-
-
-var wall_found = check_collision(vel_x * 2, 0);
-
-
-if(wall_found)
-{
-	
-	vel_x = 0;
-
+			
 		}
-	}
+}
+
 
 	// obj_enemy1 - Collision Event with obj_player
-	if (other.object_index == obj_player) {
+if (other.object_index == obj_player) 
+{
 	    if (!other.hidden) {
 		    if (variable_instance_exists(other, "health")) {
 			    other.health -= 10; // Damage player
-			}
-	    }
-	}
+															}
+						}
 }}
