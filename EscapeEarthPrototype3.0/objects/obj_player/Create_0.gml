@@ -1,49 +1,26 @@
-/// @DnDAction : YoYo Games.Instances.Inherit_Event
-/// @DnDVersion : 1
-/// @DnDHash : 1A562DB6
-/// @DnDComment : This runs the Create event of the parent,$(13_10)ensuring the player gets all variables$(13_10)from the character parent.
+// This runs the Create event of the parent,
+// ensuring the player gets all variables
+// from the character parent.
 event_inherited();
 
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 5AF156C1
-/// @DnDComment : This variable stores the number of coins$(13_10)the player has collected.
-/// @DnDArgument : "var" "coins"
+// This variable stores the number of coins
+// the player has collected.
 coins = 0;
 
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 76A6322D
-/// @DnDComment : This variable tells whether the player is currently$(13_10)in knockback (from being hit by an enemy). It will$(13_10)be true if it is, and false if not.
-/// @DnDArgument : "expr" "false"
-/// @DnDArgument : "var" "in_knockback"
+// This variable tells whether the player is currently
+// in knockback (from being hit by an enemy). It will
+// be true if it is, and false if not.
 in_knockback = false;
 
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 3C5C4CB3
-/// @DnDComment : This is the object that replaces the player$(13_10)once it is defeated.
-/// @DnDArgument : "expr" "obj_player_defeated"
-/// @DnDArgument : "var" "defeated_object"
+// This is the object that replaces the player
+// once it is defeated.
 defeated_object = obj_player_defeated;
 
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 04481269
-/// @DnDArgument : "expr" "8"
-/// @DnDArgument : "var" "obj_player.move_speed"
 obj_player.move_speed = 8;
 
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 4F42DBD9
-/// @DnDArgument : "expr" "false"
-/// @DnDArgument : "var" "is_hiding"
 is_hiding = false;
 
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 7117ED3A
-/// @DnDArgument : "expr" "false"
-/// @DnDArgument : "var" "jumped"
 jumped = false;
+
+// obj_player - Create Event
+health = 100; // Starting health value
