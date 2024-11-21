@@ -72,7 +72,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.0.169",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"EscapeEarthPrototype3.0",
   "resources":[
@@ -196,6 +196,7 @@
     {"id":{"name":"spr_hidewall","path":"sprites/spr_hidewall/spr_hidewall.yy",},},
     {"id":{"name":"spr_hurt_zone","path":"sprites/spr_hurt_zone/spr_hurt_zone.yy",},},
     {"id":{"name":"spr_leaf","path":"sprites/spr_leaf/spr_leaf.yy",},},
+    {"id":{"name":"spr_light_1","path":"sprites/spr_light_1/spr_light_1.yy",},},
     {"id":{"name":"spr_menu_background","path":"sprites/spr_menu_background/spr_menu_background.yy",},},
     {"id":{"name":"spr_message_frame","path":"sprites/spr_message_frame/spr_message_frame.yy",},},
     {"id":{"name":"spr_mound","path":"sprites/spr_mound/spr_mound.yy",},},
@@ -233,7 +234,6 @@
     {"id":{"name":"spr_touch_pause","path":"sprites/spr_touch_pause/spr_touch_pause.yy",},},
     {"id":{"name":"spr_touch_right","path":"sprites/spr_touch_right/spr_touch_right.yy",},},
     {"id":{"name":"spr_traffic_cone","path":"sprites/spr_traffic_cone/spr_traffic_cone.yy",},},
-    {"id":{"name":"spr_vines_1","path":"sprites/spr_vines_1/spr_vines_1.yy",},},
     {"id":{"name":"spr_vines_2","path":"sprites/spr_vines_2/spr_vines_2.yy",},},
     {"id":{"name":"spr_vines_3","path":"sprites/spr_vines_3/spr_vines_3.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
