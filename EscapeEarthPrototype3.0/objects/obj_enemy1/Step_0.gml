@@ -23,7 +23,7 @@ if (player != noone) {
         y += lengthdir_y(2, angle);
     } else {
         // Chase the player
-        var angle = point_direction(x, y, player.x, player.y);
+        var angle = point_direction(x, y, player.x, y);
         x += lengthdir_x(2, angle); 
         y += lengthdir_y(2, angle);
     }
