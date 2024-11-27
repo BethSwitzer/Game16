@@ -1,7 +1,9 @@
 if (place_meeting(x, y, obj_box)) {
     is_hiding = true; // Player is inside the box
+	
 } else {
     is_hiding = false; // Player has exited the box
+	
 }
 
 

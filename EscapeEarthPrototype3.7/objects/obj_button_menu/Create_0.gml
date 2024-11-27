@@ -7,6 +7,6 @@ event_inherited();
 /// @DnDVersion : 1
 /// @DnDHash : 690F807E
 /// @DnDComment : Set the text for this button
-/// @DnDArgument : "expr" ""Back to Menu""
+/// @DnDArgument : "expr" ""Menu""
 /// @DnDArgument : "var" "text"
-text = "Back to Menu";
+text = "Menu";

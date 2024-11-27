@@ -9,3 +9,4 @@ if (other.object_index == obj_player) { // Check if the collided object is the p
         }
     }
 }
+

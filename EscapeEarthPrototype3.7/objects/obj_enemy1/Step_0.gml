@@ -39,13 +39,16 @@ else
 			var angle = point_direction(x, y, dx, 0);
 			x += lengthdir_x(2, angle); 
 			y += lengthdir_y(0, angle);
+			mask_index = 0;
+			
 		} else {
 			
 			// Chase the player
 			var angle = point_direction(x, y, player.x, 0);
 			x += lengthdir_x(2, angle); 
 			y += lengthdir_y(0, angle);
-			
+			mask_index = spr_enemy1_walk;
+		
 		}
 }
 
