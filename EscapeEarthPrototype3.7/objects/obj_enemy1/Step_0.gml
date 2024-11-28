@@ -5,11 +5,11 @@ if (stuck){
 	move_snap(x, y - 1);
 	}		
 }
-if collision_line(x,y,obj_player.x,obj_player.y,obj_block_brick, false, false)
+if collision_line(x,y,obj_player.x,obj_player.y,obj_block_brick, true, false)
 {	
 
 event_inherited();
-	var wall_found = check_collision(vel_x * 2, 0);
+	var wall_found = check_collision(vel_x * 1, 0);
 	if(wall_found)
 	{
 	
@@ -27,8 +27,22 @@ event_inherited();
 }
 else
 {
+	var step = 4
+	var wall_found = check_collision(64, -10);
+	if(wall_found)
+	{
 	
-	mp_potential_step(obj_player.x,y,5,false);
+		step = -step;
+	}
+	var wall_found = check_collision(-64, -10);
+	if(wall_found)
+	{
+	
+		step = -step;
+	}
+	mp_potential_step(obj_player.x,y,step,false);
+	
+	
 // obj_enemy1 - Step Event
 	var player = instance_nearest(x, y, obj_player);
 	
@@ -37,7 +51,7 @@ else
 			// Move away
 			var dx = x - player.x;
 			var angle = point_direction(x, y, dx, 0);
-			x += lengthdir_x(7, angle); 
+			x += lengthdir_x(7, angle);
 			y += lengthdir_y(0, angle);
 			mask_index = spr_enemy_empty;
 			
