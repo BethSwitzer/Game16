@@ -140,6 +140,7 @@
     {"name":"spr_rock2","order":16,"path":"sprites/spr_rock2/spr_rock2.yy",},
     {"name":"spr_rock3","order":17,"path":"sprites/spr_rock3/spr_rock3.yy",},
     {"name":"spr_sample_player","order":2,"path":"sprites/spr_sample_player/spr_sample_player.yy",},
+    {"name":"spr_sky_2","order":5,"path":"sprites/spr_sky_2/spr_sky_2.yy",},
     {"name":"spr_stop_leaf_effect","order":1,"path":"sprites/spr_stop_leaf_effect/spr_stop_leaf_effect.yy",},
     {"name":"spr_tileset_cave","order":2,"path":"sprites/spr_tileset_cave/spr_tileset_cave.yy",},
     {"name":"spr_tileset_water","order":1,"path":"sprites/spr_tileset_water/spr_tileset_water.yy",},

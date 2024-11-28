@@ -233,6 +233,7 @@
     {"id":{"name":"spr_rock2","path":"sprites/spr_rock2/spr_rock2.yy",},},
     {"id":{"name":"spr_rock3","path":"sprites/spr_rock3/spr_rock3.yy",},},
     {"id":{"name":"spr_sample_player","path":"sprites/spr_sample_player/spr_sample_player.yy",},},
+    {"id":{"name":"spr_sky_2","path":"sprites/spr_sky_2/spr_sky_2.yy",},},
     {"id":{"name":"spr_sky","path":"sprites/spr_sky/spr_sky.yy",},},
     {"id":{"name":"spr_stop_leaf_effect","path":"sprites/spr_stop_leaf_effect/spr_stop_leaf_effect.yy",},},
     {"id":{"name":"spr_tileset_cave","path":"sprites/spr_tileset_cave/spr_tileset_cave.yy",},},
