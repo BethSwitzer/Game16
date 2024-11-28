@@ -177,6 +177,7 @@
     {"id":{"name":"spr_end_gate_glow","path":"sprites/spr_end_gate_glow/spr_end_gate_glow.yy",},},
     {"id":{"name":"spr_end_gate_particles","path":"sprites/spr_end_gate_particles/spr_end_gate_particles.yy",},},
     {"id":{"name":"spr_end_gate","path":"sprites/spr_end_gate/spr_end_gate.yy",},},
+    {"id":{"name":"spr_enemy_empty","path":"sprites/spr_enemy_empty/spr_enemy_empty.yy",},},
     {"id":{"name":"spr_enemy1_defeated","path":"sprites/spr_enemy1_defeated/spr_enemy1_defeated.yy",},},
     {"id":{"name":"spr_enemy1_walk","path":"sprites/spr_enemy1_walk/spr_enemy1_walk.yy",},},
     {"id":{"name":"spr_front_tree_1","path":"sprites/spr_front_tree_1/spr_front_tree_1.yy",},},

@@ -37,9 +37,9 @@ else
 			// Move away
 			var dx = x - player.x;
 			var angle = point_direction(x, y, dx, 0);
-			x += lengthdir_x(2, angle); 
+			x += lengthdir_x(7, angle); 
 			y += lengthdir_y(0, angle);
-			mask_index = 0;
+			mask_index = spr_enemy_empty;
 			
 		} else {
 			
